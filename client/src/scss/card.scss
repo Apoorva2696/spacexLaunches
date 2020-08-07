@@ -1,0 +1,80 @@
+/** keyframe for placeholder animation */
+@keyframes animatePlaceholder {
+	from {
+		background-color: #faf2f2;
+		background-color:  #faf2f2;
+	}
+
+	to {
+		background-color: #e9e0e0;
+		background-color:  #e9e0e0;
+	}
+}
+
+@mixin placeholder-animation() {
+	animation: animatePlaceholder 1s alternate infinite cubic-bezier(.53,.32,.73,.48);
+}
+
+
+.cards__container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    overflow-y: scroll;
+
+    &__card{
+        flex-basis: 23%;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: white;
+        height: 550px;
+
+        &__icon{
+            background-color: #f2f0f0;
+            width: 100%;
+        }
+        &__info{
+            color: black;
+            &__title{
+                color: #4657b0;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            &__item{
+                margin-top: 10px;
+                &__key{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                &__value{
+                    font-size: 13px;
+                }
+
+                &__list{
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+.cards__container__card__preloader{ 
+    @extend .cards__container__card;
+    .cards__container__card__icon__preloader{
+        height: 60%;
+        width: 100%;
+        @include placeholder-animation;
+    }
+
+    .cards__container__card__info__preloader{
+        margin-top: 10px;
+        height: 30px;
+        width: 100%;
+        @include placeholder-animation;
+    }
+}
+
+

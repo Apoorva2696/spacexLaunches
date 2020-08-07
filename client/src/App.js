@@ -1,12 +1,12 @@
 import React, { Fragment, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/layout/Navbar'
-import Landing from './components/layout/Landing';
+
+import Landing from './components/Landing';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
-import Alert from './components/layout/Alert';
+
 import { loadUser } from './actions/auth';
-import './App.css';
+import './App.scss';
 
 // redux
 import { Provider } from 'react-redux';
@@ -19,22 +19,16 @@ const App = () => {
   }, []);
 
   return(
-      <Provider store={store}>
-        <Router>
-          <Fragment>
-            <h1>SpaceX Launch Programs</h1>
-            <Route exact path="/" component={ Landing }/>
-            <section className="container">
-              <Alert />            
-                <Switch>
-                  <Route exact path="/register" component={Register}/>
-                  <Route exact path="/login" component={Login}/>
-                </Switch>
-            </section>
-
-          </Fragment>
-        </Router>
-      </Provider>
+    <Fragment>
+      <header>
+        <h1>SpaceX Launch Programs</h1>
+      </header>
+      <section className="container">  
+        <Landing />
+      </section>
+      <footer>Developed by: Apoorva Srivastava</footer>
+    </Fragment>
+       
   );
 };
 

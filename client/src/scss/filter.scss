@@ -1,0 +1,39 @@
+.filters-container{
+    width: 20%;
+    background-color: white;
+    margin: 3px 10px;
+    padding: 20px;
+    border-radius: 4px;
+    height: 550px;
+    position: relative;
+
+    &__action{
+        cursor: pointer;
+        color: mediumblue;
+        position: absolute;
+        top: 30px;
+        left: 80%;
+    }
+
+    &__filter{
+        &__title{
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            &__item{
+                text-align: center;
+                margin: 8px;
+                border-radius: 4px;
+                width: 40%;
+                background-color: lightgreen;
+                &--selected{
+                    background-color: limegreen;
+                }
+            }
+        }
+    }
+}
