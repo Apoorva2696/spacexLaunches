@@ -1,6 +1,6 @@
 import React from 'react';
-import axios from 'axios';
 
+//filters data
 const FILTERS = [
     {
         id: 'launch_year',
@@ -98,6 +98,9 @@ const FILTERS = [
     }
 ];
 
+// no-op  function
+const noop = function() {};
+
 const Filters = ( props ) => {
     const selectedFilters = props.filters;
     return(
@@ -116,7 +119,15 @@ const Filters = ( props ) => {
 
                                         const _className = _selectedValue !== option.value ? 'filters-container__filter__list__item': 'filters-container__filter__list__item filters-container__filter__list__item--selected'
                                         return(
-                                            <button className={_className} onClick={ () => { props.onClick( { ...props.filters, [ filter.id ]: option.value } ) } }>
+                                            <button
+                                                className={_className}
+                                                onClick={
+                                                    () => {
+                                                        _selectedValue !== option.value ?
+                                                            props.onClick( { ...props.filters, [ filter.id ]: option.value } ): noop()
+                                                        }
+                                                }
+                                            >
                                                 {option.title}
                                             </button>
                                         );
