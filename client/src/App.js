@@ -22,7 +22,7 @@ const App = () => {
       <Provider store={store}>
         <Router>
           <Fragment>
-            <Navbar/>
+            <h1>SpaceX Launch Programs</h1>
             <Route exact path="/" component={ Landing }/>
             <section className="container">
               <Alert />            

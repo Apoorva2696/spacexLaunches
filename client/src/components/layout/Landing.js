@@ -14,23 +14,28 @@ export const Landing = () => {
    
   }, [])
   
+  console.log(res);
 
-  if( res ) {
-    console.log(res); 
+  if( 0 !== Object.keys( res ).length ) {
     return (
         <section className="landing">
-        <div className="dark-overlay">
-          <div className="landing-inner">
-            <h1 className="x-large">Developer Connector</h1>
-            <p className="lead">
-              Create a developer profile/portfolio, share posts and get help from
-              other developers
-            </p>
-            <div className="buttons">
-              <Link to="/register" className="btn btn-primary">Sign Up</Link>
-              <Link to="/login" className="btn btn-light">Login</Link>
-            </div>
-          </div>
+        <div className="card__container">
+          {
+            res.data.map( ( item, index ) => {
+              console.log(index,item.rocket.first_stage.cores[0].land_success);
+              return(
+                <div key={`${item.mission_name}_${index}`}>
+                  <img src={item.links.mission_patch} width="20px" height="20px"/>
+                  <div>
+                    <p>{`${item.mission_name} # ${item.flight_number}`}</p>
+                    <p>{ null === item.launch_success ? 'null':item.launch_success.toString()}</p>
+                    <p>{item.launch_year}</p>
+                    <p>{ null === item.rocket.first_stage.cores[0].land_success ? 'null':item.rocket.first_stage.cores[0].land_success}</p>
+                  </div>
+                </div>
+              );
+            })
+          }
         </div>
       </section>
     );
