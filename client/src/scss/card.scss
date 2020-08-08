@@ -17,14 +17,11 @@
 
 
 .cards__container{
-    width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    height: 85vh;
-    overflow-y: scroll;
+    flex-wrap: wrap; 
 
     &__card{
-        flex-basis: 23%;
+        width: 100%;
         margin: 5px;
         padding: 10px;
         border-radius: 4px;
@@ -74,6 +71,28 @@
         height: 30px;
         width: 100%;
         @include placeholder-animation;
+    }
+}
+
+
+@media ( min-width: 700px ) {
+    .cards__container{
+        width: 70%;
+        overflow-y: scroll;
+        &__card{
+            flex-basis: 48%;
+        }
+    }
+}
+
+@media ( min-width: 1025px ) {
+    .cards__container{
+        width: 80%;
+        height: 85vh;
+        overflow-y: scroll;
+        &__card{
+            flex-basis: 24%;
+        }
     }
 }
 

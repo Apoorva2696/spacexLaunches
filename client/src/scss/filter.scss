@@ -1,5 +1,5 @@
 .filters-container{
-    width: 20%;
+   
     background-color: white;
     margin: 3px 10px;
     padding: 20px;
@@ -36,4 +36,28 @@
             }
         }
     }
+}
+
+//ipad
+@media ( min-width: 700px ) {
+    .filters-container{
+        width: 30%;
+        &__action{
+            left: 75%;
+            top: 25px;
+        }
+    }
+    
+}
+
+//desktop
+@media ( min-width: 1025px ) {
+    .filters-container{
+        width: 20%;
+        &__action{
+            left: 75%;
+            top: 25px;
+        }
+    }
+    
 }

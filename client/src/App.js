@@ -6,13 +6,14 @@ const App = () => {
 
   return(
     <Fragment>
-      <header>
+      <header className='header'>
         <h1>SpaceX Launch Programs</h1>
       </header>
-      <section className="container">  
+      <section className='container'>  
         <Landing />
+        <footer className='footer'>Developed by: Apoorva Srivastava</footer>
       </section>
-      <footer>Developed by: Apoorva Srivastava</footer>
+     
     </Fragment>
        
   );

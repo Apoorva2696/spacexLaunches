@@ -33,20 +33,6 @@ ul {
   list-style: disc;
 }
 
-header{
-  position: fixed;
-  top: 10px;
-  left: 20px;
-  width: 100%;
-}
-
-footer{
-  position: fixed;
-  bottom: 10px;
-  left: 40%;
-  width: 100%;
-}
-
 button {
   cursor: pointer;
   border: none;
@@ -55,12 +41,62 @@ button {
 
 /* Utilities */
 .container {
-  margin: 80px 0;
-  overflow-y: hidden;
-  display: flex;
+  margin: 120px 0;
+  height: 84vh;
+  overflow-y: scroll;
 }
 
 .no-data{
-  margin: 25% auto 0 auto;
+  margin: 8% auto 8% auto;
   font-size: 30px;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+}
+
+.header{
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  width: 94%;
+}
+
+// ipad
+@media( min-width: 700px ) {
+  .container{
+    margin: 80px 10px 0 10px;
+    height: calc(100vh - 120px);
+    display: flex;
+    overflow-y: hidden;
+  }
+  .footer{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+  }
+  .no-data{
+    margin: 25% auto 0 auto;
+  }
+}
+
+//desktop
+@media ( min-width: 1025px ) {
+  .container{
+    margin: 80px 10px 0 10px;
+    display: flex;
+    overflow-y: hidden;
+  }
+  
+}
+
+// for above 1440px width
+@media ( min-width: 1441px ) {
+  .container{
+    margin: 80px 10% 0 10%;
+  }
+  .header{
+    left: 10%;
+  }
 }
