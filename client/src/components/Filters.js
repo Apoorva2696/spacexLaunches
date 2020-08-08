@@ -110,7 +110,7 @@ const Filters = ( props ) => {
             {
                 FILTERS.map( ( filter ) => {
                     return(
-                        <div className='filters-container__filter'>
+                        <div className='filters-container__filter' key={filter.name}>
                             <div className='filters-container__filter__title'>{filter.name}</div>
                             <div className='filters-container__filter__list'>
                                 {
