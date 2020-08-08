@@ -1,5 +1,5 @@
 {
-  "name": "devconnector",
+  "name": "spacexlaunches",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Apoorva2696/devConnector.git"
+    "url": "git+https://github.com/Apoorva2696/spacexLaunches.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Apoorva2696/devConnector/issues"
+    "url": "https://github.com/Apoorva2696/spacexLaunches/issues"
   },
-  "homepage": "https://github.com/Apoorva2696/devConnector#readme",
+  "homepage": "https://github.com/Apoorva2696/spacexLaunches#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
