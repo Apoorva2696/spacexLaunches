@@ -1,13 +1,6 @@
 const express = require('express');
-const connectDB = require('./config/db');
 const app = express();
 const path = require('path');
-
-//connect database
-connectDB();
-
-//init middleware
-app.use(express.json({ extended: false}));
 
 
 // serve static assets in production
@@ -21,7 +14,7 @@ if(process.env.NODE_ENV === 'production'){
     });
 }
 
-const PORT = process.env.PORT|| 5000;
+const PORT = process.env.PORT|| 8000;
 
 app.listen( PORT, () => console.log(`server started on PORT ${PORT}`) );
 
