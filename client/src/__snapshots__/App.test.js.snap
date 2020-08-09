@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders without crashing given the required props 1`] = `
+<Fragment>
+  <header
+    className="header"
+  >
+    <h1>
+      SpaceX Launch Programs
+    </h1>
+  </header>
+  <section
+    className="container"
+  >
+    <Landing />
+    <footer
+      className="footer"
+    >
+      Developed by: Apoorva Srivastava
+    </footer>
+  </section>
+</Fragment>
+`;

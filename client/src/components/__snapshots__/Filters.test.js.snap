@@ -1,0 +1,574 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Filters renders without crashing given the required props 1`] = `
+<div
+  className="filters-container"
+>
+  <h2>
+    Filters
+  </h2>
+  <span
+    className="filters-container__action"
+    onClick={[Function]}
+  >
+    Clear
+  </span>
+  <div
+    className="filters-container__filter"
+    key="Launch Year__0"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Launch Year
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__0"
+        onClick={[Function]}
+      >
+        2006
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__1"
+        onClick={[Function]}
+      >
+        2007
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__2"
+        onClick={[Function]}
+      >
+        2008
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__3"
+        onClick={[Function]}
+      >
+        2009
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__4"
+        onClick={[Function]}
+      >
+        2010
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__5"
+        onClick={[Function]}
+      >
+        2011
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__6"
+        onClick={[Function]}
+      >
+        2012
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__7"
+        onClick={[Function]}
+      >
+        2013
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__8"
+        onClick={[Function]}
+      >
+        2014
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__9"
+        onClick={[Function]}
+      >
+        2015
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__10"
+        onClick={[Function]}
+      >
+        2016
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__11"
+        onClick={[Function]}
+      >
+        2017
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__12"
+        onClick={[Function]}
+      >
+        2018
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__13"
+        onClick={[Function]}
+      >
+        2019
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__14"
+        onClick={[Function]}
+      >
+        2020
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Launch__1"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Launch
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Landing__2"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Landing
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Filters with filters filters renders with selected filters without crashing given the required props 1`] = `
+<div
+  className="filters-container"
+>
+  <h2>
+    Filters
+  </h2>
+  <span
+    className="filters-container__action"
+    onClick={[Function]}
+  >
+    Clear
+  </span>
+  <div
+    className="filters-container__filter"
+    key="Launch Year__0"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Launch Year
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__0"
+        onClick={[Function]}
+      >
+        2006
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__1"
+        onClick={[Function]}
+      >
+        2007
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__2"
+        onClick={[Function]}
+      >
+        2008
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__3"
+        onClick={[Function]}
+      >
+        2009
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__4"
+        onClick={[Function]}
+      >
+        2010
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__5"
+        onClick={[Function]}
+      >
+        2011
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__6"
+        onClick={[Function]}
+      >
+        2012
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__7"
+        onClick={[Function]}
+      >
+        2013
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__8"
+        onClick={[Function]}
+      >
+        2014
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__9"
+        onClick={[Function]}
+      >
+        2015
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__10"
+        onClick={[Function]}
+      >
+        2016
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__11"
+        onClick={[Function]}
+      >
+        2017
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__12"
+        onClick={[Function]}
+      >
+        2018
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__13"
+        onClick={[Function]}
+      >
+        2019
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__14"
+        onClick={[Function]}
+      >
+        2020
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Launch__1"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Launch
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Landing__2"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Landing
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Filters with filters renders with selected filters without crashing given the required props 1`] = `
+<div
+  className="filters-container"
+>
+  <h2>
+    Filters
+  </h2>
+  <span
+    className="filters-container__action"
+    onClick={[Function]}
+  >
+    Clear
+  </span>
+  <div
+    className="filters-container__filter"
+    key="Launch Year__0"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Launch Year
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__0"
+        onClick={[Function]}
+      >
+        2006
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__1"
+        onClick={[Function]}
+      >
+        2007
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__2"
+        onClick={[Function]}
+      >
+        2008
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__3"
+        onClick={[Function]}
+      >
+        2009
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__4"
+        onClick={[Function]}
+      >
+        2010
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__5"
+        onClick={[Function]}
+      >
+        2011
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__6"
+        onClick={[Function]}
+      >
+        2012
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__7"
+        onClick={[Function]}
+      >
+        2013
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__8"
+        onClick={[Function]}
+      >
+        2014
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__9"
+        onClick={[Function]}
+      >
+        2015
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__10"
+        onClick={[Function]}
+      >
+        2016
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__11"
+        onClick={[Function]}
+      >
+        2017
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__12"
+        onClick={[Function]}
+      >
+        2018
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__13"
+        onClick={[Function]}
+      >
+        2019
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Launch Year__14"
+        onClick={[Function]}
+      >
+        2020
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Launch__1"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Launch
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Launch__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+  <div
+    className="filters-container__filter"
+    key="Successful Landing__2"
+  >
+    <div
+      className="filters-container__filter__title"
+    >
+      Successful Landing
+    </div>
+    <div
+      className="filters-container__filter__list"
+    >
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__0"
+        onClick={[Function]}
+      >
+        True
+      </button>
+      <button
+        className="filters-container__filter__list__item"
+        key="Successful Landing__1"
+        onClick={[Function]}
+      >
+        False
+      </button>
+    </div>
+  </div>
+</div>
+`;
