@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "spacexlaunches",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,8 +8,6 @@
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "license": "ISC"
+  
 }
