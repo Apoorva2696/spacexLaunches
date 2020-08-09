@@ -8,8 +8,8 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serverBuild": "cd server && npm install && npm run start",
-    "clientBuild": "cd client && npm install  && npm run build",
+    "start": "cd server && npm install && npm run start",
+    "build": "cd client && npm install  && npm run build",
     "heroku-postbuild": "npm run clientBuild && npm run serverBuild"
   },
   "repository": {
