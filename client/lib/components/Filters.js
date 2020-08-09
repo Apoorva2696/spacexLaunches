@@ -96,20 +96,21 @@ var Filters = function Filters(props) {
     onClick: function onClick() {
       props.onClick({});
     }
-  }, "Clear"), FILTERS.map(function (filter) {
+  }, "Clear"), FILTERS.map(function (filter, index) {
     return /*#__PURE__*/_react.default.createElement("div", {
       className: "filters-container__filter",
-      key: filter.name
+      key: "".concat(filter.name, "__").concat(index)
     }, /*#__PURE__*/_react.default.createElement("div", {
       className: "filters-container__filter__title"
     }, filter.name), /*#__PURE__*/_react.default.createElement("div", {
       className: "filters-container__filter__list"
-    }, filter.options.map(function (option) {
+    }, filter.options.map(function (option, index) {
       var _selectedValue = selectedFilters[filter.id] ? selectedFilters[filter.id] : null;
 
       var _className = _selectedValue !== option.value ? 'filters-container__filter__list__item' : 'filters-container__filter__list__item filters-container__filter__list__item--selected';
 
       return /*#__PURE__*/_react.default.createElement("button", {
+        key: "".concat(filter.name, "__").concat(index),
         className: _className,
         onClick: function onClick() {
           _selectedValue !== option.value ? props.onClick((0, _objectSpread3.default)((0, _objectSpread3.default)({}, props.filters), {}, (0, _defineProperty2.default)({}, filter.id, option.value))) : noop();
