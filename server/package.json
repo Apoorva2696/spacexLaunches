@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "lib": "rm -rf lib/ && babel src/ -d lib/",
-    "start": "npm run lib && node ./bin/www"
+    "start": "npm run lib && node ./bin/www",
+    "build": "npm run start && npm run clientBuild ",
+    "clientBuild": "cd ../client npm install  && npm build"
   },
   "dependencies": {
     "@babel/cli": "^7.10.5",
