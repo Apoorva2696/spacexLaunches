@@ -10,10 +10,13 @@ var cookieParser = require('cookie-parser');
 
 var logger = require('morgan');
 
-var path = require('path');
+var indexRouter = require('./routes/index');
 
-var BUILD_DIR = path.join(__dirname, '..', '..', 'client', 'build');
-var PUBLIC_DIR = path.join(__dirname, '..', 'public');
+var usersRouter = require('./routes/users');
+
+var _require = require('./paths'),
+    BUILD_DIR = _require.BUILD_DIR,
+    PUBLIC_DIR = _require.PUBLIC_DIR;
 
 var reactRenderer = require('./react-renderer');
 
@@ -22,12 +25,17 @@ var app = express(); // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(logger('dev'));
+app.use(express.json());
 app.use(express.urlencoded({
   extended: false
 }));
+app.use(cookieParser());
+app.use(express["static"](path.join(__dirname, 'public')));
 app.get('/', reactRenderer);
 app.use(express["static"](BUILD_DIR));
-app.use(express["static"](PUBLIC_DIR)); // catch 404 and forward to error handler
+app.use(express["static"](PUBLIC_DIR));
+app.use('/', indexRouter);
+app.use('/users', usersRouter); // catch 404 and forward to error handler
 
 app.use(function (req, res, next) {
   next(createError(404));

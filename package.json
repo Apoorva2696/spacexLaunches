@@ -1,28 +1,12 @@
 {
-  "name": "spacexlaunches",
+  "name": "my-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npm install && npm run start --prefix server",
-    "client": "npm install && npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server && npm install && npm run start",
-    "dev:build": "cd client && npm install  && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && cd client && npm install  && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Apoorva2696/spacexLaunches.git"
+    "start": "cd client && npm run build && cd ../server && npm run start"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Apoorva2696/spacexLaunches/issues"
-  },
-  "homepage": "https://github.com/Apoorva2696/spacexLaunches#readme",
-  "dependencies": {
-    "concurrently": "^5.2.0"
-  }
+  "license": "ISC"
 }
