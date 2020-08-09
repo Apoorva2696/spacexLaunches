@@ -1,16 +1,33 @@
-import React, { useState, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import Cards from './Cards';
 import Filters from './Filters';
 
-export const Landing = () => {
-  const [ filters, setFilters ] = useState({});
+class Landing extends React.Component{
 
-  return(
-    <Fragment>
-      <Filters onClick={ setFilters } filters = { filters }/>
-      <Cards filters = { filters }/>
-    </Fragment>
-  );
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      filters: {}
+    };
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick( payload ) {
+    this.setState( { filters: payload } );
+  }
+
+
+  render() {
+    const filters = this.state.filters;
+    return(
+      <Fragment>
+        <Filters onClick={ this.onClick } filters = { filters }/>
+        <Cards filters = { filters }/>
+      </Fragment>
+    );
+  }
   
 }
 

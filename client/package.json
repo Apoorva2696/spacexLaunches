@@ -5,24 +5,19 @@
   "dependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/plugin-transform-modules-commonjs": "^7.10.4",
-    "@babel/runtime": "^7.11.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "babel-plugin-transform-assets": "^1.0.2",
     "node-sass": "^4.14.1",
-    "query-string": "^6.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "uuid": "^8.3.0",
-    "webpack": "4.42.0"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "client:build": "npm run lib && react-scripts build",
+    "build": "react-scripts build && npm run lib",
     "lib": "rm -rf lib/ && NODE_ENV=production babel src/ -d lib/ && npm run lib:esm",
     "lib:esm": "find lib/ -type f -name *.js -exec sed -i'' -e 's|@babel/runtime/helpers/esm|@babel/runtime/helpers|g' {} +",
     "test": "react-scripts test",
@@ -59,5 +54,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.0.8"
   }
 }
