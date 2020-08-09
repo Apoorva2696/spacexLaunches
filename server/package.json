@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "lib": "rm -rf lib/ && babel src/ -d lib/",
-    "start": "npm run lib && node ./bin/www"
+    "start": "npm run lib && node ./bin/www -p $PORT"
   },
   "dependencies": {
     "@babel/cli": "^7.10.5",
