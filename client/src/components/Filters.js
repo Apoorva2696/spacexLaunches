@@ -108,18 +108,19 @@ const Filters = ( props ) => {
             <h2>Filters</h2>
             <span className='filters-container__action' onClick={ () => { props.onClick( {} ) } }>Clear</span>
             {
-                FILTERS.map( ( filter ) => {
+                FILTERS.map( ( filter, index ) => {
                     return(
-                        <div className='filters-container__filter' key={filter.name}>
+                        <div className='filters-container__filter' key={ `${filter.name}__${index}`}>
                             <div className='filters-container__filter__title'>{filter.name}</div>
                             <div className='filters-container__filter__list'>
                                 {
-                                    filter.options.map( ( option ) => {
+                                    filter.options.map( ( option, index ) => {
                                         const _selectedValue = selectedFilters[ filter.id ] ? selectedFilters[ filter.id ]:null;
 
                                         const _className = _selectedValue !== option.value ? 'filters-container__filter__list__item': 'filters-container__filter__list__item filters-container__filter__list__item--selected'
                                         return(
                                             <button
+                                                key={`${filter.name}__${index}`}
                                                 className={_className}
                                                 onClick={
                                                     () => {
