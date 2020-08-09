@@ -5,7 +5,7 @@
   "scripts": {
     "lib": "rm -rf lib/ && babel src/ -d lib/",
     "start": "npm run lib && node ./bin/www",
-    "build": "npm-run-all -s clientBuild start",
+    "build": "npm run clientBuild  && npm run start",
     "clientBuild": "cd ../client npm install  && npm run build && npm run start"
   },
   "dependencies": {
