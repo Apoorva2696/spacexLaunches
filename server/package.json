@@ -6,6 +6,10 @@
     "lib": "rm -rf lib/ && babel src/ -d lib/",
     "start": "npm run lib && node ./bin/www -p $PORT"
   },
+  "engines": {
+    "node": "0.10.41",
+    "npm": "1.4.29"
+  },
   "dependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.1",
