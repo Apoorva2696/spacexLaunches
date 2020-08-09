@@ -9,8 +9,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd server && npm install && npm run start",
-    "build": "cd client && npm install  && npm run build",
-    "heroku-postbuild": "npm run clientBuild && npm run serverBuild"
+    "build": "cd client && npm install  && npm run build"
   },
   "repository": {
     "type": "git",
