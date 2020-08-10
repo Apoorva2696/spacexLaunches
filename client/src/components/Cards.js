@@ -41,26 +41,27 @@ class Cards extends React.Component{
     componentDidUpdate(prevProps, prevState) {
         if( JSON.stringify( this.state.filters ) !== JSON.stringify( prevState.filters ) ){
             const _params = 0 !== Object.keys( this.state.filters ).length ? `?${ queryString.stringify(this.state.filters) }`: null;
-            this.getData(_params,this.state.filters);
+            this.getData(_params,this.state.filters).then( ( res) => this.setState( { response: res, isFetching: false } ) ).catch( e => console.error(e) );
         }
     }
 
     // make an API request and set the state with the recieved response
-    getData(_params,filters) {
+    async getData(_params,filters) {
+
         this.setState( { isFetching:true } );
-        const getResponse = async () => {
-            let _res = await axios.get(`https://api.spacexdata.com/v3/launches?limit=100${_params}`);
-            return _res;
-        };
+        let res;
 
-        getResponse().then( ( data ) => {
-
+        try {
+            res = await axios.get(`https://api.spacexdata.com/v3/launches?limit=100${_params}`);
+        } catch (e) {
+            console.error(e);
+        } finally {
             if( null !== _params ) {
                 window.history.replaceState( filters, 'params', `${_params}`);
             };
 
-        this.setState( { response: data, isFetching: false } );
-        } );
+        }
+        return res;
     }
   
 
