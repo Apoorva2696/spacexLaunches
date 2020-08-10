@@ -1,89 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Cards cards renders without crashing given the required props 1`] = `
-<Cards
-  filters={Object {}}
+<div
+  className="cards__container"
 >
   <div
-    className="cards__container"
+    className="cards__container__card"
+    key="RazakSat_0"
   >
+    <img
+      alt="Mission Logo"
+      className="cards__container__card__icon"
+      height="60%"
+      src="https://images2.imgbox.com/8d/fc/0qdZMWWx_o.png"
+      width="80%"
+    />
     <div
-      className="cards__container__card"
-      key="RazakSat_0"
+      className="cards__container__card__info"
     >
-      <img
-        alt="Mission Logo"
-        className="cards__container__card__icon"
-        height="60%"
-        src="https://images2.imgbox.com/8d/fc/0qdZMWWx_o.png"
-        width="80%"
-      />
       <div
-        className="cards__container__card__info"
+        className="cards__container__card__info__title"
       >
-        <div
-          className="cards__container__card__info__title"
+        RazakSat # 5
+      </div>
+      <div
+        className="cards__container__card__info__item"
+      >
+        <span
+          className="cards__container__card__info__item__key"
         >
-          RazakSat # 5
-        </div>
-        <div
-          className="cards__container__card__info__item"
+          Mission Ids :
+        </span>
+        <ul
+          className="cards__container__card__info__item__list"
+        />
+      </div>
+      <div
+        className="cards__container__card__info__item"
+      >
+        <span
+          className="cards__container__card__info__item__key"
         >
-          <span
-            className="cards__container__card__info__item__key"
-          >
-            Mission Ids :
-          </span>
-          <ul
-            className="cards__container__card__info__item__list"
-          />
-        </div>
-        <div
-          className="cards__container__card__info__item"
+          Launch Year :
+        </span>
+        <span
+          className="cards__container__card__info__item__value"
         >
-          <span
-            className="cards__container__card__info__item__key"
-          >
-            Launch Year :
-          </span>
-          <span
-            className="cards__container__card__info__item__value"
-          >
-            2009
-          </span>
-        </div>
-        <div
-          className="cards__container__card__info__item"
+          2009
+        </span>
+      </div>
+      <div
+        className="cards__container__card__info__item"
+      >
+        <span
+          className="cards__container__card__info__item__key"
         >
-          <span
-            className="cards__container__card__info__item__key"
-          >
-            Successful Launch :
-          </span>
-          <span
-            className="cards__container__card__info__item__value"
-          >
-            true
-          </span>
-        </div>
-        <div
-          className="cards__container__card__info__item"
+          Successful Launch :
+        </span>
+        <span
+          className="cards__container__card__info__item__value"
         >
-          <span
-            className="cards__container__card__info__item__key"
-          >
-            Successful Landing :
-          </span>
-          <span
-            className="cards__container__card__info__item__value"
-          >
-            null
-          </span>
-        </div>
+          true
+        </span>
+      </div>
+      <div
+        className="cards__container__card__info__item"
+      >
+        <span
+          className="cards__container__card__info__item__key"
+        >
+          Successful Landing :
+        </span>
+        <span
+          className="cards__container__card__info__item__value"
+        >
+          null
+        </span>
       </div>
     </div>
   </div>
-</Cards>
+</div>
 `;
 
 exports[`Cards with all filters and mock axios fetch articles on #componentDidMount 1`] = `
@@ -166,170 +162,6 @@ exports[`Cards with all filters and mock axios fetch articles on #componentDidMo
 `;
 
 exports[`Cards with all filters and mock axios renders with all filters without crashing given the required props 1`] = `
-<Cards
-  filters={
-    Object {
-      "land_success": false,
-      "launch_success": false,
-      "launch_year": 2013,
-    }
-  }
->
-  <div
-    className="cards__container"
-  >
-    <div
-      className="cards__container__card__preloader"
-      key="0"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="1"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="2"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="3"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-  </div>
-</Cards>
-`;
-
-exports[`Cards with all filters fetch articles on #componentDidMount 1`] = `
-<Cards
-  filters={Object {}}
->
-  <div
-    className="cards__container"
-  >
-    <div
-      className="cards__container__card__preloader"
-      key="0"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="1"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="2"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-    <div
-      className="cards__container__card__preloader"
-      key="3"
-    >
-      <div
-        className="cards__container__card__icon__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-      <div
-        className="cards__container__card__info__preloader"
-      />
-    </div>
-  </div>
-</Cards>
-`;
-
-exports[`Cards with all filters renders with all filters without crashing given the required props 1`] = `
 <Cards
   filters={
     Object {

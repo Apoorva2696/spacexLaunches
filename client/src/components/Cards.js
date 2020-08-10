@@ -74,11 +74,11 @@ class Cards extends React.Component{
         const { isFetching, response } = this.state;
 
         // if response has data then render cards
-        if( 0 !== Object.keys( response ).length && !isFetching ) {
+        if( undefined !== response && 0 !== Object.keys( response ).length && !isFetching ) {
             return (
                 <div className='cards__container'>
                     {
-                    0 < response.data.length ? response.data.map( ( item, index ) => {
+                    response.data && 0 < response.data.length ? response.data.map( ( item, index ) => {
                     
                         return(
                         <div className='cards__container__card' key={`${item.mission_name}_${index}`}>
