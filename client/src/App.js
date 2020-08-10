@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Landing from './components/Landing';
 import './App.scss';
 
+// basic page structure using sematic tags
 const App = () => {
 
   return(

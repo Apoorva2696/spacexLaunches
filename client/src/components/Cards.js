@@ -9,14 +9,20 @@ class Cards extends React.Component{
       super(props);
   
       this.state = {
-        filters: props.filters,
-        response: {},
-        isFetching: false
+        filters: props.filters, // filters object
+        response: {}, // response for cards data
+        isFetching: false // flag for fetching data
       };
   
-      this.getData = this.getData.bind(this);
+      this._bind();
     }
 
+    // bind the methods to context
+    _bind() {
+        this.getData = this.getData.bind(this);
+    }
+
+    // fetch data on mount
     componentDidMount() {
         const filters = this.state.filters;
         const _params = 0 !== Object.keys( filters ).length ? `?${ queryString.stringify(filters) }`: null;
@@ -24,16 +30,25 @@ class Cards extends React.Component{
         this.getData(_params,filters);
     }
 
-    componentWillReceiveProps( nextProps ) {
-        if( JSON.stringify( this.props.filters ) !== JSON.stringify( nextProps.filters ) ){
-            const _params = 0 !== Object.keys( nextProps.filters ).length ? `?${ queryString.stringify(nextProps.filters) }`: null;
-            this.getData(_params,nextProps.filters);
+    // check if new filter changed
+    static getDerivedStateFromProps( nextProps, prevState ) {
+        if( JSON.stringify( prevState.filters ) !== JSON.stringify( nextProps.filters ) ){
+            return { ...prevState, filters: nextProps.filters };
+        } else return null;
+    }
+
+    // check if new data needs to be fetched in case filters have changed
+    componentDidUpdate(prevProps, prevState) {
+        if( JSON.stringify( this.state.filters ) !== JSON.stringify( prevState.filters ) ){
+            const _params = 0 !== Object.keys( this.state.filters ).length ? `?${ queryString.stringify(this.state.filters) }`: null;
+            this.getData(_params,this.state.filters);
         }
     }
 
+    // make an API request and set the state with the recieved response
     getData(_params,filters) {
+        this.setState( { isFetching:true } );
         const getResponse = async () => {
-            this.setState( { isFetching:true } );
             let _res = await axios.get(`https://api.spacexdata.com/v3/launches?limit=100${_params}`);
             return _res;
         };
@@ -52,6 +67,8 @@ class Cards extends React.Component{
     render() {
 
         const { isFetching, response } = this.state;
+
+        // if response has data then render cards
         if( 0 !== Object.keys( response ).length && !isFetching ) {
             return (
                 <div className='cards__container'>
@@ -108,7 +125,7 @@ class Cards extends React.Component{
                     }
                 </div>
             );
-        } else if( isFetching ){
+        } else if( isFetching ) { // if the component is fetching data show preloaders
             return(
                 <div className='cards__container'>
                 {

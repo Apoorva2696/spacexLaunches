@@ -1,6 +1,6 @@
 import React from 'react';
 
-//filters data
+//filters data model
 const FILTERS = [
     {
         id: 'launch_year',
@@ -101,8 +101,12 @@ const FILTERS = [
 // no-op  function
 const noop = function() {};
 
+// view for filters
 const Filters = ( props ) => {
+
+    // use the received filters to show selected filters
     const selectedFilters = props.filters;
+
     return(
         <div className='filters-container'>
             <h2>Filters</h2>

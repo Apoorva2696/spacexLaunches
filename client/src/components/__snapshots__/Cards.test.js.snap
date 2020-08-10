@@ -1,156 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders without crashing given the required props 1`] = `
-<div
-  className="cards__container"
->
-  <div
-    className="cards__container__card__preloader"
-    key="0"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="1"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="2"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="3"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-</div>
-`;
-
 exports[`Cards cards renders without crashing given the required props 1`] = `
-<div
-  className="cards__container"
+<Cards
+  filters={Object {}}
 >
   <div
-    className="cards__container__card__preloader"
-    key="0"
+    className="cards__container"
   >
     <div
-      className="cards__container__card__icon__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="0"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="1"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="2"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="3"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
   </div>
-  <div
-    className="cards__container__card__preloader"
-    key="1"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="2"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="3"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-</div>
+</Cards>
 `;
 
-exports[`Cards renders without crashing given the required props 1`] = `
+exports[`Cards with all filters renders with all filters without crashing given the required props 1`] = `
 <div
   className="cards__container"
 >
@@ -226,151 +155,84 @@ exports[`Cards renders without crashing given the required props 1`] = `
 `;
 
 exports[`Cards with filters renders with filters without crashing given the required props 1`] = `
-<div
-  className="cards__container"
+<Cards
+  filters={
+    Object {
+      "launch_year": 2006,
+    }
+  }
 >
   <div
-    className="cards__container__card__preloader"
-    key="0"
+    className="cards__container"
   >
     <div
-      className="cards__container__card__icon__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="0"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="1"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="2"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
     <div
-      className="cards__container__card__info__preloader"
-    />
+      className="cards__container__card__preloader"
+      key="3"
+    >
+      <div
+        className="cards__container__card__icon__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+      <div
+        className="cards__container__card__info__preloader"
+      />
+    </div>
   </div>
-  <div
-    className="cards__container__card__preloader"
-    key="1"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="2"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="3"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-</div>
-`;
-
-exports[`Cards with filters renders without crashing given the required props 1`] = `
-<div
-  className="cards__container"
->
-  <div
-    className="cards__container__card__preloader"
-    key="0"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="1"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="2"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-  <div
-    className="cards__container__card__preloader"
-    key="3"
-  >
-    <div
-      className="cards__container__card__icon__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-    <div
-      className="cards__container__card__info__preloader"
-    />
-  </div>
-</div>
+</Cards>
 `;
