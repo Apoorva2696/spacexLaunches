@@ -27,7 +27,9 @@ class Cards extends React.Component{
         const filters = this.state.filters;
         const _params = 0 !== Object.keys( filters ).length ? `?${ queryString.stringify(filters) }`: null;
 
-        this.getData(_params,filters);
+        this.getData(_params,filters).then(
+            ( res ) => { this.setState( { response: res, isFetching: false } ); }
+        ).catch( e => console.error(e) );;
     }
 
     // check if new filter changed
@@ -41,7 +43,9 @@ class Cards extends React.Component{
     componentDidUpdate(prevProps, prevState) {
         if( JSON.stringify( this.state.filters ) !== JSON.stringify( prevState.filters ) ){
             const _params = 0 !== Object.keys( this.state.filters ).length ? `?${ queryString.stringify(this.state.filters) }`: null;
-            this.getData(_params,this.state.filters).then( ( res) => this.setState( { response: res, isFetching: false } ) ).catch( e => console.error(e) );
+            this.getData(_params,this.state.filters).then(
+                ( res ) => { this.setState( { response: res, isFetching: false } ); }
+            ).catch( e => console.error(e) );
         }
     }
 
